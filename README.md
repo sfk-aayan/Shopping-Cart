@@ -1,4 +1,4 @@
-#Shopping-Cart
+# Shopping-Cart
 A Shopping Cart created for my CSE 4636 course using Java Servlets, Java Beans, JSP, CSS and JavaScript following the MVC architecture.
 
 To run this project, a server is required. Example: `Apache Tomcat`
