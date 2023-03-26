@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    
+    <servlet>
+        <servlet-name>controllerServlet</servlet-name>
+        <servlet-class>com.example.shopping_cart.ControllerServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>controllerServlet</servlet-name>
+        <url-pattern>/controllerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addcontrollerServlet</servlet-name>
+        <servlet-class>com.example.shopping_cart.CartAddControllerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addcontrollerServlet</servlet-name>
+        <url-pattern>/addcontrollerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logoutcontrollerServlet</servlet-name>
+        <servlet-class>com.example.shopping_cart.LogoutControllerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logoutcontrollerServlet</servlet-name>
+        <url-pattern>/logoutcontrollerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>removecartcontrollerServlet</servlet-name>
+        <servlet-class>com.example.shopping_cart.RemoveCartController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>removecartcontrollerServlet</servlet-name>
+        <url-pattern>/removecartcontrollerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updatecartcontrollerServlet</servlet-name>
+        <servlet-class>com.example.shopping_cart.UpdateCartController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updatecartcontrollerServlet</servlet-name>
+        <url-pattern>/updatecartcontrollerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>checkoutcontrollerServlet</servlet-name>
+        <servlet-class>com.example.shopping_cart.CheckoutControllerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>checkoutcontrollerServlet</servlet-name>
+        <url-pattern>/checkoutcontrollerServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
